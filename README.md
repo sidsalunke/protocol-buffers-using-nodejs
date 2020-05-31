@@ -6,13 +6,13 @@ Protocol buffers are Google's language-neutral, platform-neutral, extensible mec
 # Prerequisites
 
 - [Node](https://nodejs.org/en/download/) should be installed
-- [Protocol buffer complier](https://github.com/protocolbuffers/protobuf/releases) should be installed
+- [Protocol buffer compiler](https://github.com/protocolbuffers/protobuf/releases) should be installed
 
 # How it works?
 
 ## The proto file
 - The project contains an [employee.proto](https://github.com/sidsalunke/protocol-buffers-using-nodejs/blob/949f2802695cba23ec9803221c9e26fc4a9428cf/employees.proto) file that creates the structure for an employee within an organisation.
-- Everything in the proto file is labelled as a `message`
+- Everything in the proto file is labeled as a `message`
 - An employee has the following properties
    - id (integer)
    - name (string)
@@ -20,7 +20,7 @@ Protocol buffers are Google's language-neutral, platform-neutral, extensible mec
 - An array of employees is created using the `repeated` keyword
 
 ## Creating a javascript proto file
-- In order to use a protocol buffer file in a `nodejs` project, the [employee.proto](https://github.com/sidsalunke/protocol-buffers-using-nodejs/blob/949f2802695cba23ec9803221c9e26fc4a9428cf/employees.proto) needs to be converted into a `.js` file.
+- To use a protocol buffer file in a `nodejs` project, the [employee.proto](https://github.com/sidsalunke/protocol-buffers-using-nodejs/blob/949f2802695cba23ec9803221c9e26fc4a9428cf/employees.proto) needs to be converted into a `.js` file.
    - to do this, run:
    ```javascript
    npm run createEmployeesProtoFile
