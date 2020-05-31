@@ -1,0 +1,16 @@
+{
+  "name": "protocol-buffers-using-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "createEmployeesProtoFile": "protoc --js_out=import_style=commonjs,binary:. employees.proto",
+    "dev": "npm run createEmployeesProtoFile && node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "google-protobuf": "^3.12.2"
+  }
+}
